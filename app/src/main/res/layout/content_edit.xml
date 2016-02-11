@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pl.kyon.forgottenfridge.EditActivity"
+    tools:showIn="@layout/activity_edit">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_alignParentTop="true"
+        android:id="@+id/btnSaveTop"
+        android:singleLine="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_below="@+id/btnSaveTop"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnScan"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnScan"
+        android:layout_below="@+id/btnSaveTop"
+        android:id="@+id/etName"
+        android:hint="@string/item_name"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:id="@+id/etAmount"
+        android:hint="@string/item_amount"/>
+
+    <DatePicker
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAmount"
+        android:id="@+id/dpExpire"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_below="@+id/dpExpire"
+        android:id="@+id/btnSave"/>
+
+
+</RelativeLayout>

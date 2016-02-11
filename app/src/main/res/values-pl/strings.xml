@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Forgotten Fridge</string>
+    <string name="action_add">Dodaj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_drop">Usuń wszystko</string>
+    <string name="btn_save">Zapisz</string>
+    <string name="item_amount">Ilość</string>
+    <string name="item_expire">Termin</string>
+    <string name="item_name">Nazwa</string>
+    <string name="title_activity_edit">Edycja produktu</string>
+    <string name="title_activity_new">Nowy produkt</string>
+</resources>
