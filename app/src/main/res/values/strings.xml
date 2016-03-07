@@ -1,12 +1,47 @@
 <resources>
     <string name="app_name">Forgotten Fridge</string>
+
+
+    <!-- Main -->
+    <string name="title_activity_main">Fridge</string>
+
     <string name="action_add">Add</string>
-    <string name="action_delete">Delete</string>
+    <string name="action_sync">Sync</string>
+    <string name="action_share">Share</string>
     <string name="action_drop">Clear all</string>
-    <string name="item_name">Name</string>
-    <string name="item_amount">Amount</string>
-    <string name="item_expire">Expire</string>
+    <string name="zero_days">today!</string>
+    <plurals name="days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="ok_sync">Synchronized.</string>
+    <string name="error_sync">Error during connection with server.</string>
+
+    <!-- EditActivity -->
     <string name="title_activity_new">New item</string>
     <string name="title_activity_edit">Edit item</string>
+    <string name="action_delete">Delete</string>
+    <string name="btn_date">Date</string>
     <string name="btn_save">Save</string>
+    <string name="item_name">Name</string>
+    <string name="item_amount">(optional) where, how much </string>
+    <string name="item_expire">Expire</string>
+
+    <!-- ShareActivity -->
+    <string name="title_activity_share">Share</string>
+    <string name="action_scan">Scan</string>
+    <string name="text_share">
+        To share your fridge, show this screen to your flat mate.
+        To sync with this fridge, open Forgotten Fridge on your phone,
+        click "Share" and then "Scan".
+    </string>
+    <string name="error_scan">Error during code scanning.</string>
+
+    <!-- InstallActivity -->
+    <string name="title_activity_install">Install</string>
+    <string name="text_install">
+        You need QR code reader to scan QR code. Click on button below to install it.
+    </string>
+    <string name="btn_install_store">Open with Play Store</string>
+    <string name="btn_install_browser">Open with Browser</string>
 </resources>

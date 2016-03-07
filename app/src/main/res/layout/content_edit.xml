@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_camera"
-        android:layout_below="@+id/btnSaveTop"
+        android:layout_below="@id/btnSaveTop"
         android:layout_alignParentRight="true"
         android:id="@+id/btnScan"
         android:visibility="gone"/>
@@ -33,32 +33,43 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/btnScan"
-        android:layout_below="@+id/btnSaveTop"
+        android:layout_toLeftOf="@id/btnScan"
+        android:layout_below="@id/btnSaveTop"
         android:id="@+id/etName"
         android:hint="@string/item_name"/>
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etName"
+        android:layout_below="@id/etName"
         android:id="@+id/etAmount"
         android:hint="@string/item_amount"/>
 
-    <DatePicker
-        android:layout_width="fill_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/btn_date"
         android:layout_below="@+id/etAmount"
-        android:id="@+id/dpExpire"
-        android:datePickerMode="spinner"
-        android:spinnersShown="true"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnExpire"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etExpire"
+        android:inputType="none"
+        android:focusable="false"
+        android:text=""
+        android:layout_below="@+id/etAmount" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_save"
-        android:layout_below="@+id/dpExpire"
-        android:id="@+id/btnSave"/>
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/btnExpire" />
 
 
 </RelativeLayout>

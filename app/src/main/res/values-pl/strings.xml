@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Forgotten Fridge</string>
+    <string name="app_name">Zapomniana lodówka</string>
+
+    <!-- Main -->
+    <string name="title_activity_main">Lodówka</string>
     <string name="action_add">Dodaj</string>
-    <string name="action_delete">Usuń</string>
     <string name="action_drop">Usuń wszystko</string>
     <string name="btn_save">Zapisz</string>
     <string name="item_amount">Ilość</string>
     <string name="item_expire">Termin</string>
     <string name="item_name">Nazwa</string>
+    <string name="action_share">Udostępnij</string>
+    <string name="action_sync">Synchronizuj</string>
+    <string name="zero_days">dzisiaj!</string>
+    <plurals name="days">
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+        <item quantity="other">%d dni</item>
+    </plurals>
+
+    <!-- EditActivity -->
+    <string name="action_delete">Usuń</string>
     <string name="title_activity_edit">Edycja produktu</string>
     <string name="title_activity_new">Nowy produkt</string>
+
+    <!-- ShareActivity -->
+    <string name="title_activity_share">Udostępnij</string>
+    <string name="action_scan">Skanuj</string>
+    <string name="text_share">Aby udostępnić swoją lodówkę, pokaż ten ekran współlokatorom. Aby uzyskać dostęp do tej lodówki, otwórz aplikację na swoim telefonie, kliknij Udostępnij, a następnie Skanuj i zeskanuj kod z tego telefonu.</string>
+
+    <!-- InstallActivity -->
+    <string name="title_activity_install">Instalacja</string>
+    <string name="btn_install_browser">Otwórz w przeglądarce</string>
+    <string name="btn_install_store">Otwórz w  sklepie Play</string>
+    <string name="text_install">Potrzebujesz czytnika kodów QR aby zeskanować kod. Kliknij na jeden z klawiszy poniżej, aby go zainstalować.</string>
+    <string name="btn_date">Data</string>
+    <string name="error_sync">Błąd podczas połączenia z serwerem.</string>
+    <string name="ok_sync">Zsynchronizowano.</string>
+    <string name="error_scan">Błąd podczas skanowania kodu.</string>
+
+
 </resources>

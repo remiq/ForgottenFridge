@@ -9,8 +9,20 @@
         android:icon="@android:drawable/ic_menu_add"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="101"
+        android:title="@string/action_sync"
+        android:icon="@drawable/ic_action_cloud_sync"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="200"
+        android:title="@string/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"/>
+    <item
         android:id="@+id/action_drop"
-        android:orderInCategory="100"
+        android:orderInCategory="201"
         android:title="@string/action_drop"
         android:icon="@android:drawable/ic_menu_delete"
         app:showAsAction="never"/>
